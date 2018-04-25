@@ -1,0 +1,106 @@
+header  {
+    border-bottom: solid #cccccc 2px;
+    height: 130px;
+}
+
+.head-container {
+    /* Set size of header container and center */
+    width: 960px;
+    height: 130px;
+    margin: auto;
+
+    /* Set header background color */
+    background-color: #ffffff;
+}
+
+h1  {
+    /* Align box with name on the left */
+    float: left;
+
+    color: #ffffff;
+    background-color: #4aaaa5;
+
+    /* Manually set size */
+    width: 25%;
+    height: 80px;
+
+    /* Manually move to bottom so it's touching the border */
+    margin-top: 50px;
+
+    /* Center text vertically and horizontally */
+    text-align: center;
+    line-height: 80px;    
+
+    font-size: 28px;
+
+}
+
+.nav-links  {
+    /* Align box with navigation links on the right */
+    float: right;
+
+    /* Manually set size */
+    width: 30%;
+    height: 80px;
+
+   /* Manually move to bottom so it's touching the border */
+   margin-top: 50px;
+
+   /* Center text vertically but keep right-aligned */
+   text-align: right;
+   line-height: 80px;      
+}
+
+#about  {
+    
+}
+
+main    {
+
+}
+
+.main-container   {
+    /* Set width of main container and center */
+    clear: both;
+    width: 960px;
+    border: solid #dddddd 1px;
+    margin: auto;
+
+    /* Set main background color */
+    background-color: #ffffff;
+
+}
+
+h2  {
+    color: #4aaaa5;
+}
+
+footer {
+    /* Clear floats */
+    clear: both;
+
+    text-align: center;
+
+    /* Set footer background color */
+    background-color: #666666;
+
+    height: 10%;
+}
+
+h1, h2  {
+    /* Set Heading font styles */
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.head-container, .main-container, footer, a {
+    /* Set regular font color */
+    color: #777777;
+
+    /* Set regular font family */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a   {
+    /* Remove underlines from anchor text */
+    text-decoration: none;
+}
