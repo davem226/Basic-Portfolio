@@ -9,6 +9,9 @@ header  {
     height: 130px;
     margin: auto;
 
+    /* This allows the name box to be moved to the bottom of this container */
+    position: relative; 
+
     /* Set header background color */
     background-color: #ffffff;
 }
@@ -16,47 +19,67 @@ header  {
 h1  {
     /* Align box with name on the left */
     float: left;
+    left: 0px;
 
     color: #ffffff;
     background-color: #4aaaa5;
 
-    /* Manually set size */
+    /* Set size as a percentage of head-container */
     width: 25%;
-    height: 80px;
+    height: 65%;
 
-    /* Manually move to bottom so it's touching the border */
-    margin-top: 50px;
+    /* Set position to bottom of head-container */
+    position: absolute;
+    bottom: 0px;
 
     /* Center text vertically and horizontally */
     text-align: center;
     line-height: 80px;    
 
     font-size: 28px;
-
+    font-weight: bold;
 }
 
 .nav-links  {
-    /* Align box with navigation links on the right */
+    /* Align div with navigation links on the right */
     float: right;
+    right: 0px;
 
-    /* Manually set size */
-    width: 30%;
-    height: 80px;
+    /* Set size as a percentage of head-container */
+    width: 35%;
+    height: 65%;
 
-   /* Manually move to bottom so it's touching the border */
-   margin-top: 50px;
+    /* Set position to bottom of head-container */
+    position: absolute;
+    bottom: 0px;
 
    /* Center text vertically but keep right-aligned */
    text-align: right;
-   line-height: 80px;      
+   line-height: 80px;     
+   
+   font-size: 18px;
 }
 
 #about  {
-    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#contact    {
+    padding-left: 20px;
+}
+
+#portfolio  {
+    border-right: solid #777777 1px;
+    border-left: solid #777777 1px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 main    {
-
+    background-image: url(rockywall.png);
+    height: 860px;
+    border-bottom: solid 10px #4aaaa5;
 }
 
 .main-container   {
@@ -69,10 +92,33 @@ main    {
     /* Set main background color */
     background-color: #ffffff;
 
+    position: relative;
+    top: 40px;
+
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h2  {
+    font-size: 28px;
+    font-weight: bold;
     color: #4aaaa5;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    border-bottom: solid #cccccc;
+}
+
+img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+#p1, #p2, #p3   {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 footer {
@@ -84,7 +130,10 @@ footer {
     /* Set footer background color */
     background-color: #666666;
 
-    height: 10%;
+    padding-top: 60px;
+
+    font-size: 18px;
+    color: #cccccc;
 }
 
 h1, h2  {
@@ -92,7 +141,7 @@ h1, h2  {
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-.head-container, .main-container, footer, a {
+.head-container, .main-container, a {
     /* Set regular font color */
     color: #777777;
 
