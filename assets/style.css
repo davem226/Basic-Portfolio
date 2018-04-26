@@ -158,13 +158,34 @@ a   {
     width: 300px;
     height: 200px;
     position: relative;
-    text-align: center;
     padding: 20px;
+    text-align: center;
+    float: left;
 }
 
 #personal, #webapps, #rpg, #birding, #movies   {
     position: absolute;
     bottom: 10px;
+    right: 0px;
     color: #ffffff;
     background-color: #4aaaa5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 22px;
+    width: 300px;
+}
+
+button  {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+
+#name, #email, #message {
+    padding: 5px;
+    width: 100%;
 }
